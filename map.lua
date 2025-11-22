@@ -10,7 +10,7 @@ return {
   tilewidth = 32,
   tileheight = 32,
   nextlayerid = 3,
-  nextobjectid = 11,
+  nextobjectid = 3,
   properties = {},
   tilesets = {
     {
@@ -22,7 +22,7 @@ return {
       spacing = 0,
       margin = 0,
       columns = 8,
-      image = "../simpleGraphics_tiles32x32.png",
+      image = "simpleGraphics_tiles32x32.png",
       imagewidth = 256,
       imageheight = 160,
       objectalignment = "unspecified",
@@ -51,7 +51,7 @@ return {
       width = 30,
       height = 20,
       id = 1,
-      name = "Tile Layer 1",
+      name = "map",
       class = "",
       visible = true,
       opacity = 1,
@@ -76,9 +76,9 @@ return {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 21, 21, 21, 21, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 21, 21, 21, 21, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         22, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 23
@@ -99,44 +99,14 @@ return {
       properties = {},
       objects = {
         {
-          id = 2,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 480.614,
-          y = 448.304,
-          width = 190.832,
-          height = 15.1454,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["collidable"] = true
-          }
-        },
-        {
-          id = 3,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 225.162,
-          y = 512.924,
-          width = 159.532,
-          height = 13.126,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["collidable"] = true
-          }
-        },
-        {
-          id = 10,
+          id = 1,
           name = "",
           type = "",
           shape = "rectangle",
           x = 0,
-          y = 608.108,
-          width = 956.341,
-          height = 25.9875,
+          y = 609.013,
+          width = 957.369,
+          height = 26.7966,
           rotation = 0,
           visible = true,
           properties = {
