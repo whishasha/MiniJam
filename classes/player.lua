@@ -5,9 +5,9 @@ function player.new(self, keybinds, x, y, width, height, friction, acceleration,
     local self = self or {}
     
     self.xVel = 0
-    self.yVel = 0
+    self.yVel = 10
 
-    self.x = x or 0
+    self.x = x or 200
     self.y = y or 0
 
     self.width = width or 10
