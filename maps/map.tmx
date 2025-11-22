@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="13">
- <editorsettings>
-  <export target="map..lua" format="lua"/>
- </editorsettings>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="11">
  <tileset firstgid="1" name="simpleGraphics_tiles32x32" tilewidth="32" tileheight="32" tilecount="40" columns="8">
   <image source="../simpleGraphics_tiles32x32.png" width="256" height="160"/>
  </tileset>
- <layer id="1" name="map" width="30" height="20">
+ <layer id="1" name="Tile Layer 1" width="30" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -21,31 +18,30 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,21,21,21,21,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,21,21,21,21,21,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,21,21,21,21,21,21,21,21,21,21,21,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,21,21,21,21,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 22,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,23
 </data>
  </layer>
- <objectgroup id="3" name="collision" tintcolor="#00000000">
-  <object id="5" x="511.924" y="416.59" width="192.202" height="15.3271">
+ <objectgroup id="2" name="collision">
+  <object id="2" x="480.614" y="448.304" width="190.832" height="15.1454">
    <properties>
     <property name="collidable" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="8" x="288.741" y="512.807" width="349.85" height="13.7496">
+  <object id="3" x="225.162" y="512.924" width="159.532" height="13.126">
    <properties>
     <property name="collidable" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="11" x="1.5456" y="610.51" width="956.723" height="24.7295">
+  <object id="10" x="0" y="608.108" width="956.341" height="25.9875">
    <properties>
     <property name="collidable" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="12" x="978.362" y="608.964"/>
  </objectgroup>
 </map>
