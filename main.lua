@@ -8,6 +8,8 @@ function love.load()
     Map:box2d_init(World)
     Map.layers.collision.visible = false
 
+    local plr = Player.new()
+
 end
 
 function love.update(dt)
