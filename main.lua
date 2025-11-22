@@ -3,7 +3,7 @@ require("classes.player")
 
 function love.load()
     _G.World = love.physics.newWorld()
-    local plr = player.new()
+    local plr = Player.new()
 end
 
 function love.draw()

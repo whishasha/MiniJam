@@ -1,9 +1,9 @@
 _G.player = {}
 player.__index = player
 
-function player.new(keybinds, x, y, width, height, friction, acceleration, maxspeed)
-    local self = {}
-
+function player.new(self, keybinds, x, y, width, height, friction, acceleration, maxspeed)
+    local self = self or {}
+    
     self.xVel = 0
     self.yVel = 0
 
@@ -23,13 +23,19 @@ function player.new(keybinds, x, y, width, height, friction, acceleration, maxsp
     self.physics.shape = love.physics.newRectangleShape(self.width, self.height)
     self.physics.fixture = love.physics.newFixture(self.physics.body, self.physics.shape)
 
+    self.keybinds = {}
+
     return setmetatable(self, player)
 end
 
-function player:update(dt)
+local function syncPhysics(self)
+    self.x, self.y = self.physics.body:getPosition()
+end
 
+function player:update(dt)
+    syncPhysics(self)
 end
 
 function player:draw()
-    
+    love.graphics.rectangle("fill", self.x, self.y, self.width, self.height)
 end
