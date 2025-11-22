@@ -1,13 +1,21 @@
-local player = {}
+_G.player = {}
+player.__index = player
 
-function player.new(keybinds, x, y, width, height)
+function player.new(keybinds, x, y, width, height, friction, acceleration, maxspeed)
     local self = {}
-    self.x = x or 0
-    self.y = y or 0
-    self.width = width or 10
-    self.height = height or 10
+
     self.xVel = 0
     self.yVel = 0
+
+    self.x = x or 0
+    self.y = y or 0
+
+    self.width = width or 10
+    self.height = height or 10
+
+    self.friction = friction or 3500
+    self.acceleration = acceleration or 4000
+    self.maxSpeed = maxspeed or 100
 
     self.physics = {}
     self.physics.body = love.physics.newBody(World, self.x, self.y, "dynamic")

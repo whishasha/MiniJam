@@ -1,8 +1,9 @@
 _G.love = require("love")
-local player = require("classes.player")
+require("classes.player")
 
 function love.load()
-    _G.World = {}
+    _G.World = love.physics.newWorld()
+    local plr = player.new()
 end
 
 function love.draw()
@@ -10,5 +11,5 @@ function love.draw()
 end
 
 function love.update(dt)
-   local plr = player.new()
+
 end
