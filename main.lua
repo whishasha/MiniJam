@@ -10,10 +10,10 @@ end
 
 function love.update(dt)
     -- empty
+    World:update(dt)
 end
 
 function love.draw()
-    Map:draw()
-    love.graphics.print("Hello World", 400, 300)
+    Map:draw(0, 0, 1, 1)
 end
 
